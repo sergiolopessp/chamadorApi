@@ -15,9 +15,9 @@ public class chamadaController {
 	public Resposta chamada() {
 		ClientConfig clientConfig = new ClientConfig(new FiltroHeaders());
 		
-		//String variavelAmbiente = System.getenv("URL_SERVICO");
+		String variavelAmbiente = System.getenv("URL_SERVICO");
 		
-		String variavelAmbiente = "http://192.168.15.19:8080/retornaDados";
+		//String variavelAmbiente = "http://192.168.15.19:8080/retornaDados";
 		
 		WebTarget target = ClientBuilder.newClient(clientConfig).target(variavelAmbiente);
 		
